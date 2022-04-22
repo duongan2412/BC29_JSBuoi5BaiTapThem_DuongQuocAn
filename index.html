@@ -20,46 +20,54 @@
             <div class="col-sm-6 col-12">
                 <div class="card">
                     <div class="card-header font-weight-bold">
-                        Bài 1: Quản lý tuyển sinh
+                        Bài 1: Tính tiền thuế thu nhập cá nhân
                     </div>
                     <div class="card-body">
                         <div class="form-group ml-0">
-                            <label for="">Nhập điểm chuẩn</label>
-                            <input type="number" class="form-control" id="txtDiemChuan">
+                            <label for="">Nhập họ tên</label>
+                            <input type="text" class="form-control" id="txtHoten">
                         </div>
                         <div class="form-group">
-                            <label>Chọn Đối Tượng</label>
-                            <select class="form-control" id="doiTuong">
-                                <option value="0">0</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                            </select>
+                            <label for="">Nhập tổng thu nhập năm</label>
+                            <input type="number" class="form-control" id="numThuNhapNam">
                         </div>
                         <div class="form-group">
-                            <label>Chọn Khu Vực</label>
-                            <select class="form-control" id="khuVuc">
-                                <option value="0">X</option>
-                                <option value="1">A</option>
-                                <option value="2">B</option>
-                                <option value="3">C</option>
-                            </select>
+                            <label for="">Nhập số người phụ thuộc</label>
+                            <input type="number" class="form-control" id="numPhuThuoc">
                         </div>
-                        <div class="form-group ml-0 mt-2">
-                            <label for="">Nhập điểm môn thứ 1</label>
-                            <input type="number" class="form-control" id="txtDiemMon1">
-                        </div>
-                        <div class="form-group mt-2">
-                            <label for="">Nhập điểm môn thứ 2</label>
-                            <input type="number" class="form-control" id="txtDiemMon2">
-                        </div>
-                        <div class="form-group mt-2">
-                            <label for="">Nhập điểm môn thứ 3</label>
-                            <input type="number" class="form-control" id="txtDiemMon3">
-                        </div>
-                        <button id="btnDiemChuan" class="btn btn-primary mt-3">Kết Quả</button>
+                        <button id="btnTinhThueThuNhap" class="btn btn-primary mt-3">Tính tiền thuế thu nhập cá nhân</button>
                     </div>
-                    <div class="card-footer text-muted" id="kqDiem"></div>
+                    <div class="card-footer text-muted" id="kqTinhThueThuNhap"></div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-12">
+                <div class="card">
+                    <div class="card-header font-weight-bold">
+                        Bài 1: Tính tiền thuế thu nhập cá nhân
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group ml-0">
+                            <label>Chọn Loại Khách</label>
+                            <select class="form-control" id="loaiKhach">
+                                <option value="0">Nhà dân</option>
+                                <option value="1">Doanh nghiệp</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập mã khách hàng</label>
+                            <input type="text" class="form-control" id="textMaKH">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập số kênh cao cấp</label>
+                            <input type="number" class="form-control" id="numKenhCaoCap">
+                        </div>
+                        <div id="soKetNoiDN" class="form-group soKetNoi ml-0 d-none">
+                            <label for="">Nhập số kế nối</label>
+                            <input type="number" class="form-control" id="numKetNoi">
+                        </div>
+                        <button id="btnTinhTienCap" class="btn btn-primary mt-3">Tính tiền cáp</button>
+                    </div>
+                    <div class="card-footer text-muted" id="kqTienCap"></div>
                 </div>
             </div>
         </div>
